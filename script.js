@@ -3,19 +3,14 @@
 function operate(a,b,operator){
     switch (operator) {
         case "*":
-            const result = multiply(a,b)
-            break;
+            return multiply(a,b)
         case "/":
-            const result = divide(a,b)
-            break;
+            return divide(a,b)
         case "+":
-            const result = add(a,b)
-            break;
+            return add(a,b)
         case "-":
-            const result = subtract(a,b)
-            break;
+            return subtract(a,b)
     }
-    return result;
 }
 
 function add(a, b){
