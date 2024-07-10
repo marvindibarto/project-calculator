@@ -8,50 +8,50 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1> -->
     <div class="calculator-outline">
-        <div class="screen">27</div>
+        <div class="screen" id="result">0</div>
         <div class="input">
             <div class = "numbers">
                 <div>
-                    <input class="button" type="button" value="1" />
-                    <input class="button" type="button" value="2" />
-                    <input class="button" type="button" value="3" />
+                    <input class="button" type="button" id="1" onclick="addValue('1')" value="1" />
+                    <input class="button" type="button" id="2" onclick="addValue('2')" value="2" />
+                    <input class="button" type="button" id="3" onclick="addValue('3')" value="3" />
                 </div>
                 <div>
-                    <input class="button" type="button" value="4" />
-                    <input class="button" type="button" value="5" />
-                    <input class="button" type="button" value="6" />
+                    <input class="button" type="button" id="4" onclick="addValue('4')" value="4" />
+                    <input class="button" type="button" id="5" onclick="addValue('5')" value="5" />
+                    <input class="button" type="button" id="6" onclick="addValue('6')" value="6" />
                 </div>
                 <div>
-                    <input class="button" type="button" value="7" />
-                    <input class="button" type="button" value="8" />
-                    <input class="button" type="button" value="9" />
+                    <input class="button" type="button" id="7" onclick="addValue('7')" value="7" />
+                    <input class="button" type="button" id="8" onclick="addValue('8')" value="8" />
+                    <input class="button" type="button" id="9" onclick="addValue('9')" value="9" />
                 </div>
                 <div>
-                    <input class="button" type="button" value="0" />
+                    <input class="button" type="button" id="0" onclick="addValue('0')" value="0" />
                 </div>
             </div>
             <div class="operators">
                 <div>
-                    <input class="button operator" type="button" value="+" />
+                    <input class="button operator" type="button" id="plus" onclick="addOperator('+')" value="+" />
                 </div>
                 <div>
-                    <input class="button operator" type="button" value="-" />
+                    <input class="button operator" type="button" id="minus" onclick="addOperator('-')" value="-" />
                 </div>
                 <div>
-                    <input class="button operator" type="button" value="x" />
+                    <input class="button operator" type="button" id="times" onclick="addOperator('x')" value="x" />
                 </div>
                 <div>
-                    <input class="button operator" type="button" value=":" />
+                    <input class="button operator" type="button" id="div" onclick="addOperator(':')" value=":" />
                 </div>
                 
             </div>
             
         </div>
-        <div>
-            <input class="button" type="button" value="Clear" />
-            <input class="button" type="button" value="=" />
+        <div class="input">
+            <input class="button otherOperator" type="button" id="clear" onclick="resetAll()" value="AC" />
+            <input class="button otherOperator" type="button" id="calculate" onclick="calculate()" value="=" />
         </div>
         
     </div>

@@ -1,6 +1,8 @@
 body{
     margin-left: 240px;
     margin-right: 240px;
+    display: flex;
+    
 }
 
 
@@ -15,6 +17,7 @@ h1 {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+
 }
 
     .screen{
@@ -23,12 +26,14 @@ h1 {
     font-size: 50px;
     padding: 20px;
     text-align: right;
+    min-height: 58px;
     }
 
     .input{
         display: flex;
         gap: 3px;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
             .button{
@@ -36,7 +41,7 @@ h1 {
             color: black;
             font-size: 36px;
             margin: 8px;
-            padding: 5px 14px;
+            padding: 20px 20px;
             border-color: black;
             border-style: inset;
             border-width: 3px;
@@ -46,6 +51,10 @@ h1 {
 
             .button.operator{
                 width: 100%;
+            }
+
+            .button.otherOperator{
+                width: 40%;
             }
 
             .button:hover{
